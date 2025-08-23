@@ -11,7 +11,7 @@
 /* Main Content */
 main {
     display: grid;
-    grid-template-columns: 2fr 1fr 2fr;
+    grid-template-columns: 1fr 4fr 1fr;
     grid-template-rows: var(--input-height) 1fr;
     min-height: 100vh;
 }
@@ -24,6 +24,10 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+}
+
+#noteForm #tArea {
+    width: 100%;
 }
 
 /* Saved Notes Section */
@@ -40,6 +44,18 @@ main {
     border: solid 1px black;
     border-radius: 6px;
     padding: 4px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.note button {
+    justify-self: end;
+    margin-left: auto;
+}
+
+.note span {
+    flex-grow: 1;
 }
 
 /* Buttons */
@@ -47,4 +63,23 @@ main {
     width: 100%;
     display: flex;
     justify-content: space-between;
+}
+
+/* Media Queries */
+@media (min-width: 601px) {
+    main {
+        grid-template-columns: 1fr 3fr 1fr;
+    }
+}
+
+@media (min-width: 1001px) {
+    main {
+            grid-template-columns: 1fr 2fr 1fr;
+        }
+}
+
+@media (min-width: 1201px) {
+    main {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }

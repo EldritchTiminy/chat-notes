@@ -114,9 +114,9 @@ function addDelBtn () {
     // Adds text to unassigned button.
     newBtn.textContent = "Delete Note";
     // Adds attribute to unassigned button.
-    newBtn.setAttribute("type", "button")
+    newBtn.setAttribute("type", "button");
     // Adds delete event function.
-    newBtn.addEventListener("click", delBtn)
+    newBtn.addEventListener("click", delBtn);
     // Returns the the floating, unassigned button object.
     return newBtn;
 }
