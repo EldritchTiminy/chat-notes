@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./style.css">
+        <title>Document</title>
+    </head>
+    <body>
+
+        <main>
+
+            <form id="noteForm">
+                <h1>Take Notes...</h1>
+                <label for="tArea">Note:</label>
+                <textarea id="tArea" name="tArea" rows="3" cols="50" placeholder="Take some notes..." required>test 1 2</textarea>
+                <div class="btns">
+                    <button type="button" id="sBtn">Save Note</button>
+                    <button type="button" id="clrAll">Clear All Notes</button>
+                </div>
+            </form>
+
+            <ul id="savedNotes">
+                <li class="note">If you're seeing this, then something went wrong...</li>
+            </ul>
+
+        </main>
+
+        <footer></footer>
+        <script src="./script.js"></script>
+    </body>
+</html>
