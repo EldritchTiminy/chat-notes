@@ -1,4 +1,4 @@
-# Breakout - JavaScript Practice
+# Notes - JavaScript Practice
 A simple note-taking web app. Made to practice JavaScript.
 
 ## Table of Contents
